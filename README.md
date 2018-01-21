@@ -1,5 +1,6 @@
 
 [![Docker Hub](https://img.shields.io/badge/burstcoin-docker-blue.svg)](https://hub.docker.com/u/burstcoin/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # Burstcoin Docker
 
