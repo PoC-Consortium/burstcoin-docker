@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  burstcoin:
+    image: burstcoin/core:2.0.1-mariadb
+    restart: always
+    depends_on:
+     - mariadb
+    ports:
+     - 8123:8123
+     - 8125:8125
+  mariadb:
+    image: mariadb:10
+    environment:
+     - MYSQL_ROOT_PASSWORD=burst
+     - MYSQL_DATABASE=burst
+    command: mysqld --character_set_server=utf8mb4
+    volumes:
+     - ./burst_db:/var/lib/mysql
