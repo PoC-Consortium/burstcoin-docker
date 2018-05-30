@@ -2,7 +2,7 @@ version: '3'
 
 services:
   burstcoin:
-    image: burstcoin/core:2.0.1-mariadb
+    image: burstcoin/core:2.0-mariadb
     restart: always
     depends_on:
      - mariadb
